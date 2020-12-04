@@ -7,15 +7,6 @@
         },
         "workspaceId": {
           "type": "String"
-        },
-        "storageAccountId": {
-          "type": "String"
-        },
-        "eventHubAuthorizationRuleId": {
-          "type": "String"
-        },
-        "eventHubName": {
-          "type": "String"
         }
     },
 	"resources": [
@@ -25,9 +16,6 @@
 			"name": "[parameters('settingName')]",
 			"properties": {
 				"workspaceId": "[parameters('workspaceId')]",
-				"storageAccountId": "[parameters('storageAccountId')]",
-				"eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
-				"eventHubName": "[parameters('eventHubName')]",
 				"logs": [
 					{
 						"category": "Administrative",
@@ -35,31 +23,31 @@
 					},
 					{
 						"category": "Security",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "ServiceHealth",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "Alert",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "Recommendation",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "Policy",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "Autoscale",
-						"enabled": true
+						"enabled": false
 					},
 					{
 						"category": "ResourceHealth",
-						"enabled": true
+						"enabled": false
 					}
 				]
 			}
