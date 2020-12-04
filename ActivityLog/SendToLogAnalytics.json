@@ -23,31 +23,31 @@
 					},
 					{
 						"category": "Security",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "ServiceHealth",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "Alert",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "Recommendation",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "Policy",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "Autoscale",
-						"enabled": false
+						"enabled": true
 					},
 					{
 						"category": "ResourceHealth",
-						"enabled": false
+						"enabled": true
 					}
 				]
 			}
